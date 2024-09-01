@@ -1,0 +1,50 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.9859512676771837,
+      "y": 6.7350917800427155
+    },
+    "rotation": -137.29061004263855
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "Amp 3rd Piece"
+                }
+              },
+              {
+                "type": "wait",
+                "data": {
+                  "waitTime": 2.75
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "Intake Piece"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Shoot Piece"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "Amp",
+  "choreoAuto": false
+}
