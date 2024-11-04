@@ -2,10 +2,8 @@ package frc.robot;
 
 import edu.wpi.first.wpilibj2.command.*;
 
-import com.fasterxml.jackson.databind.util.Named;
 import com.pathplanner.lib.auto.AutoBuilder;
 import com.pathplanner.lib.auto.NamedCommands;
-import edu.wpi.first.wpilibj.DigitalOutput;
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.XboxController;
@@ -13,7 +11,6 @@ import edu.wpi.first.wpilibj.event.EventLoop;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.button.JoystickButton;
-import edu.wpi.first.wpilibj2.command.button.POVButton;
 import edu.wpi.first.wpilibj2.command.sysid.SysIdRoutine;
 import frc.robot.commands.*;
 import frc.robot.subsystems.*;
@@ -82,7 +79,6 @@ public class RobotContainer {
     // private final JoystickButton driverLimelight = new JoystickButton(driver, XboxController.Button.kLeftBumper.value);
     // private final JoystickButton driverStowButton = new JoystickButton(driver, XboxController.Button.kRightBumper.value);
 
-    private final POVButton operatorZero = new POVButton(operator, 0);
     // private final POVButton driverNinety = new POVButton(driver, 90);
     // private final POVButton driverOneEighty = new POVButton(driver, 180);
     // private final POVButton driverTwoSeventy = new POVButton(driver, 270);
@@ -93,7 +89,6 @@ public class RobotContainer {
 
     /* Variables */
     private final EventLoop eventLoop = new EventLoop();
-    private boolean autoSubsystems = false; // Disables/enables automatic subsystem functions (e.g. auto-intake)
     private final SendableChooser<Command> chooser;
 
     

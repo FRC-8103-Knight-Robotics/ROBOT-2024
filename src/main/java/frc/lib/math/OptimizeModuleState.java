@@ -12,7 +12,7 @@ public class OptimizeModuleState {
    * support for continuous input.
    *
    * @param desiredState The desired state.
-   * @param currentAngle The current module angle.
+   * @param currentAngle The current module angle.  
    */
   public static SwerveModuleState optimize(
       SwerveModuleState desiredState, Rotation2d currentAngle) {

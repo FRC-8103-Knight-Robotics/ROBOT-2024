@@ -27,55 +27,6 @@ public final class Constants {
         public static final double AUTO_ANGLE_D = 0.0;
     }
 
-    public static final class Angler {
-        public static final int ANGLER_ID = 62;
-        public static final double ANGLER_P = 0.035;
-        public static final double ANGLER_I = 0.00009;
-        public static final double ANGLER_D = 0.0001;
-        public static final int ANGLER_CURRENT_LIMIT = 35;
-        public static final boolean ANGLER_INVERT = false;
-        public static final double ANGLER_LOWER_LIMIT = 0;
-        public static final double ANGLER_UPPER_LIMIT = 20;
-        public static final double UPPER_BOUND_LIMIT = 2.26;
-        public static final double UPPER_BOUND_COEFFICIENT = 51.8;
-        public static final double UPPER_BOUND_SERIES = -1.31;
-        public static final double TIGHT_BOUND_COEFFICIENT = 40.9; // 43.9
-        public static final double TIGHT_BOUND_SERIES = -1.3;
-    }
-
-    public static final class Elevator {
-        public static final int ELEVATOR_ID = 31;
-        public static final int ELEVATOR_CURRENT_LIMIT = 70;
-        public static final boolean ELEVATOR_INVERT = true;
-        public static final double ELEVATOR_P = 0.097;
-        public static final double ELEVATOR_I = 0.0;
-        public static final double ELEVATOR_D = 0.0;
-        public static final double ELEVATOR_LOWER_LIMIT = 0;
-        public static final double ELEVATOR_UPPER_LIMIT = 61;
-        public static final double ELEVATOR_AMP = 61.0;
-        public static final double ELEVATOR_STOW = 0.0;
-    }
-
-    public static final class Shooter {
-        public static final int BOTTOM_SHOOTER_ID = 60; //BOTTOM WHEEL
-        public static final int TOP_SHOOTER_ID = 61; //TOP WHEEL
-        public static final int SHOOTER_CURRENT_LIMIT = 60;
-        public static final boolean SHOOTER_INVERT = false;
-        //baseline shooter speed in RPM
-        public static final double BASE_SHOOTER_SPEED = 6000;
-        public static final double IDLE_SHOOTER_SPEED = 0.3;
-        // +/-tolerance for considering if the shooter is up to speed
-        public static final double SHOOTER_SPEED_TOLERANCE = 100; //TODO: make sure this is acceptable
-        public static final double DISTANCE_MULTIPLIER = 10; //TODO: check this
-        public static final double SHOOTER_P = 0.00062; //was 0.003
-        public static final double SHOOTER_I = 0.000000001;
-        public static final double SHOOTER_D = 0.0005;
-        public static final double SHOOTER_FF = 0.1;
-        public static final int FEEDER_ID = 59;
-        public static final int FEEDER_CURRENT_LIMIT = 50;
-        public static final boolean FEEDER_INVERT = false;
-    }
-
     public static final class Swerve {
         public static final double GYRO_OFFSET = 0;
         public static final int PIGEON_ID = 6;
